@@ -9,6 +9,6 @@ public class PointTests {
 
     public void PointTest (){
         Point k= new Point(5,2,7,4);
-        Assert.assertEquals(k.Distance(), 4.242640687119285);
+        Assert.assertEquals(k.Distance(), -5);
     }
 }
