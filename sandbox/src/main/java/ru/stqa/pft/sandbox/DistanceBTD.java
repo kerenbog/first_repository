@@ -2,10 +2,14 @@ package ru.stqa.pft.sandbox;
 
 public class DistanceBTD {
     public static void main(String[] args) {
+        Point P1= new Point(2,6);
+        Point P2 = new Point(4,1);
+        System.out.println(distance(P1,P2));
+        System.out.println(P1.distance2(P2));
+    }
 
-        Point p = new Point(5, 2, 7, 4);
-        System.out.println("the distance between dot P1" + "(" + p.a + "," + p.b + ")" + " and " + "dot P2" + "(" + p.c + "," + p.d + ")" + " is " +
-                p.Distance());
+    public static double distance (Point P1,Point P2){
+        return Math.sqrt((P1.a- P2.a)*(P1.a- P2.a)+(P1.b- P2.b)*(P1.b- P2.b));
 
     }
 }
