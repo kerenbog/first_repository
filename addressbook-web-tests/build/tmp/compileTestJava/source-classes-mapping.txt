@@ -1,0 +1,6 @@
+ru/stqa/pft/addressbook/GroupCreationTests.java
+ ru.stqa.pft.addressbook.GroupCreationTests
+ru/stqa/pft/addressbook/GroupCreationTest1.java
+ ru.stqa.pft.addressbook.GroupCreationTest1
+ru/stqa/pft/addressbook/GroupCreationTestFirefox.java
+ ru.stqa.pft.addressbook.GroupCreationTestFirefox
