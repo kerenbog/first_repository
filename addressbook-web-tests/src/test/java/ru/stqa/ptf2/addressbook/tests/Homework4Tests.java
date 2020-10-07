@@ -1,4 +1,4 @@
-package ru.stqa.ptf2.addressbook;
+package ru.stqa.ptf2.addressbook.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;

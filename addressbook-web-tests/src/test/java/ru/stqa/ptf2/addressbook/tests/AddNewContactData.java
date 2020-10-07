@@ -1,4 +1,4 @@
-package ru.stqa.ptf2.addressbook;
+package ru.stqa.ptf2.addressbook.tests;
 
 public class AddNewContactData {
     private final String firstName;
