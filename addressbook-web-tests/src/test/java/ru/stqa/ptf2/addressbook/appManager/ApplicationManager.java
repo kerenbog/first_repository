@@ -8,8 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    public ChromeDriver wd;
-    private  NavigationHelper navigationHelper ;
+
+    ChromeDriver wd;
+
+    private ContactHelper contactHelper;
+    private NavigationHelper navigationHelper ;
     private GroupHelper groupHelper ;
     private SessionHelper sessionHelper;
 
@@ -20,6 +23,7 @@ public class ApplicationManager {
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
+        contactHelper = new ContactHelper(wd);
         sessionHelper.login("admin", "secret");
     }
 
@@ -37,7 +41,6 @@ public class ApplicationManager {
             return false;
         }
     }
-
     public boolean isAlertPresent() {
         try {
             wd.switchTo().alert();
@@ -45,13 +48,10 @@ public class ApplicationManager {
         } catch (NoAlertPresentException e) {
             return false;
         }
-
     }
-
     public void logout() {
         wd.findElement(By.linkText("Logout")).click();
     }
-
     public GroupHelper getGroupHelper() {
         return groupHelper;
     }
@@ -61,4 +61,8 @@ public class ApplicationManager {
     }
 
 
+
+    public ContactHelper getContactHelper() {
+        return contactHelper;
+    }
 }

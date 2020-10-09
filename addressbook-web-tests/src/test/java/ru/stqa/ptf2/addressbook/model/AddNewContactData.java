@@ -1,4 +1,4 @@
-package ru.stqa.ptf2.addressbook.tests;
+package ru.stqa.ptf2.addressbook.model;
 
 public class AddNewContactData {
     private final String firstName;
@@ -7,12 +7,12 @@ public class AddNewContactData {
     private final String address;
     private final String mobile;
     private final String email;
-    private final String bday;
-    private final String bMonth;
-    private final String bYear;
+    private final int bday;
+    private final int bMonth;
+    private final int bYear;
 
 
-    public AddNewContactData(String middleName, String lastName, String address, String mobile, String email, String bday, String bMonth, String bYear, String firstName) {
+    public AddNewContactData(String middleName, String lastName, String address, String mobile, String email, int bday, int bMonth, int bYear, String firstName) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -47,15 +47,15 @@ public class AddNewContactData {
         return email;
     }
 
-    public String getBday() {
+    public int getBday() {
         return bday;
     }
 
-    public String getbMonth() {
+    public int getbMonth() {
         return bMonth;
     }
 
-    public String getbYear() {
+    public int getbYear() {
         return bYear;
     }
 
